@@ -4,7 +4,7 @@ const translations = {
         lblRemTheme: "Tema Rem (Azul)",
         lblRamTheme: "Tema Ram (Rosa)",
         headerTagline: "Edición Especial Re:Zero • Rem & Ram",
-        mainTitle: "Matriz Cultural de Latinoamérica",
+        mainTitle: "Cultural de Latinoamérica",
         mainSubtitle: "Explora la riqueza gastronómica, ritmos tradicionales, folclore, deportes y grandes figuras históricas de nuestra región.",
         searchPlaceholder: "Buscar país, comida, danza, personaje...",
         btnToggleTable: "Ver en Tabla",
@@ -23,7 +23,7 @@ const translations = {
         noResultsTitle: "No se encontraron resultados",
         noResultsText: "Intenta con otro término de búsqueda o selecciona un idioma distinto.",
         lblFooterCreated: "Creado con cariño por",
-        lblFooterHosted: "Optimizado para GitHub Pages • Re:Zero Inspired Theme",
+        lblFooterHosted: "Optimizado • Re:Zero Inspired Theme",
         countries: [
             {
                 id: "ecuador",
@@ -152,7 +152,7 @@ const translations = {
         lblRemTheme: "Rem Theme (Blue)",
         lblRamTheme: "Ram Theme (Pink)",
         headerTagline: "Re:Zero Special Edition • Rem & Ram",
-        mainTitle: "Latin American Cultural Matrix",
+        mainTitle: "Latin American Cultural",
         mainSubtitle: "Explore the rich gastronomy, traditional rhythms, folklore, sports, and iconic historical figures of Latin America.",
         searchPlaceholder: "Search country, food, dance, person...",
         btnToggleTable: "View as Table",
@@ -171,7 +171,7 @@ const translations = {
         noResultsTitle: "No results found",
         noResultsText: "Try another search term or switch language.",
         lblFooterCreated: "Created with love by",
-        lblFooterHosted: "Optimized for GitHub Pages • Re:Zero Inspired Theme",
+        lblFooterHosted: "Optimized • Re:Zero Inspired Theme",
         countries: [
             {
                 id: "ecuador",
@@ -300,7 +300,7 @@ const translations = {
         lblRemTheme: "Thème Rem (Bleu)",
         lblRamTheme: "Thème Ram (Rose)",
         headerTagline: "Édition Spéciale Re:Zero • Rem & Ram",
-        mainTitle: "Matrice Culturelle d'Amérique Latine",
+        mainTitle: "Culturelle d'Amérique Latine",
         mainSubtitle: "Découvrez la gastronomie, los rythmes traditionnels, le folklore, los sports et les personnalités d'Amérique latine.",
         searchPlaceholder: "Rechercher un pays, plat, danse, héro...",
         btnToggleTable: "Voir en Tableau",
@@ -319,7 +319,7 @@ const translations = {
         noResultsTitle: "Aucun résultat trouvé",
         noResultsText: "Essayez un autre terme de recherche ou changez de langue.",
         lblFooterCreated: "Créé avec amour par",
-        lblFooterHosted: "Optimisé pour GitHub Pages • Re:Zero Inspired Theme",
+        lblFooterHosted: "Optimisé • Re:Zero Inspired Theme",
         countries: [
             {
                 id: "ecuador",
