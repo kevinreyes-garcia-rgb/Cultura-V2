@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural de Latinoamérica - Creado por Chizu</title>
+    
+    <!-- Favicon / Profile Icon -->
+    <link rel="icon" type="image/jpeg" href="https://files.catbox.moe/hsc6ei.jpg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-pink-500 selection:text-white">
+
+    <!-- Top Lace Decoration -->
+    <div class="h-2 lace-top-border bg-indigo-900/30 w-full border-b border-white/10"></div>
+
+    <!-- Main Navigation / Header -->
+    <header class="relative overflow-hidden border-b border-slate-800">
+        <!-- Banner Image Background -->
+        <div class="ribbon-banner absolute inset-0 z-0 opacity-40 hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="ribbon-overlay absolute inset-0 z-10"></div>
+
+        <div class="relative z-20 max-w-7xl mx-auto px-4 py-8 sm:py-12">
+            <!-- Author Profile & Language Selector Row -->
+            <div class="flex flex-wrap justify-between items-center gap-4 mb-8">
+                <!-- Creator Profile Badge -->
+                <div class="flex items-center gap-3 bg-slate-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-pink-500/30 shadow-lg shadow-pink-500/10 hover:border-blue-400/50 transition-all">
+                    <img src="https://files.catbox.moe/hsc6ei.jpg" alt="Chizu Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-blue-400 p-0.5">
+                    <div>
+                        <span class="text-xs text-slate-400 block font-fredoka uppercase tracking-wider" id="lblCreatedBy">Creado por</span>
+                        <span class="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Chizu ✨</span>
+                    </div>
+                </div>
+
+                <!-- Rem & Ram Mascot Floating Badges -->
+                <div class="hidden md:flex items-center gap-3">
+                    <span class="rem-badge px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-gem text-blue-400"></i> <span id="lblRemTheme">Tema Rem (Azul)</span>
+                    </span>
+                    <span class="ram-badge px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-heart text-pink-400"></i> <span id="lblRamTheme">Tema Ram (Rosa)</span>
+                    </span>
+                </div>
+
+                <!-- Language Selector Dropdown -->
+                <div class="flex items-center gap-2 bg-slate-900/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-globe text-indigo-400"></i>
+                    <label for="langSelect" class="sr-only">Idioma / Language</label>
+                    <select id="langSelect" class="bg-transparent text-slate-200 text-sm font-medium focus:outline-none cursor-pointer pr-2">
+                        <option value="es" class="bg-slate-900 text-slate-200">🇪🇸 Español</option>
+                        <option value="en" class="bg-slate-900 text-slate-200">🇺🇸 English</option>
+                        <option value="fr" class="bg-slate-900 text-slate-200">🇫🇷 Français</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="text-center max-w-3xl mx-auto my-4">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-slate-700 text-xs font-medium text-slate-300 mb-4">
+                    <i class="fa-solid fa-sparkles text-amber-400"></i>
+                    <span id="headerTagline">Edición Especial Re:Zero • Rem & Ram</span>
+                </div>
+                <h1 id="mainTitle" class="text-3xl sm:text-5xl font-extrabold font-fredoka tracking-wide mb-3 rr-gradient-text drop-shadow-md">
+                    Matriz Cultural de Latinoamérica
+                </h1>
+                <p id="mainSubtitle" class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+                    Explora la riqueza gastronómica, ritmos tradicionales, folclore, deportes y grandes figuras históricas de nuestra región.
+                </p>
+            </div>
+
+            <!-- Search Bar & Controls -->
+            <div class="mt-8 max-w-2xl mx-auto flex flex-col sm:flex-row items-center gap-3">
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" id="searchInput" 
+                           placeholder="Buscar país, comida, danza, personaje..." 
+                           class="w-full pl-10 pr-4 py-3 bg-slate-900/90 border border-slate-700 rounded-xl text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all shadow-lg text-sm">
+                </div>
+
+                <!-- Toggle View Mode Button -->
+                <button id="btnToggleView" class="w-full sm:w-auto px-5 py-3 bg-gradient-to-r from-blue-600 to-pink-600 hover:from-blue-500 hover:to-pink-500 text-white text-sm font-semibold rounded-xl shadow-md transition-all duration-300 flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i id="toggleIcon" class="fa-solid fa-table"></i>
+                    <span id="btnToggleText">Ver en Tabla</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <main class="max-w-7xl mx-auto px-4 py-10 flex-grow w-full">
+        
+        <!-- Interactive Cards Grid Container -->
+        <div id="cardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic Country Cards populated via script.js -->
+        </div>
+
+        <!-- Table View Container -->
+        <div id="tableView" class="hidden overflow-x-auto rounded-2xl glass-card border border-slate-700/80 shadow-2xl">
+            <table class="w-full text-left border-collapse text-sm">
+                <thead>
+                    <tr class="bg-slate-800/90 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400 border-b border-slate-700 font-fredoka tracking-wider">
+                        <th class="p-4"><i class="fa-solid fa-flag mr-1.5 text-blue-400"></i><span id="thCountry">País</span></th>
+                        <th class="p-4"><i class="fa-solid fa-utensils mr-1.5 text-amber-400"></i><span id="thDish">Platillo Típico</span></th>
+                        <th class="p-4"><i class="fa-solid fa-person-dancing mr-1.5 text-pink-400"></i><span id="thDance">Danza</span></th>
+                        <th class="p-4"><i class="fa-solid fa-music mr-1.5 text-purple-400"></i><span id="thMusic">Música</span></th>
+                        <th class="p-4"><i class="fa-solid fa-futbol mr-1.5 text-emerald-400"></i><span id="thSport">Deporte</span></th>
+                        <th class="p-4"><i class="fa-solid fa-star mr-1.5 text-yellow-400"></i><span id="thPerson">Personaje Famoso</span></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="divide-y divide-slate-800 text-slate-300">
+                    <!-- Dynamic Table Rows populated via script.js -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- No Results Fallback Message -->
+        <div id="noResults" class="hidden text-center py-16 bg-slate-800/30 rounded-2xl border border-dashed border-slate-700 my-6">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-pink-500/10 flex items-center justify-center text-pink-400 text-2xl">
+                <i class="fa-solid fa-face-frown-open"></i>
+            </div>
+            <h3 id="noResultsTitle" class="text-lg font-bold text-slate-200">No se encontraron resultados</h3>
+            <p id="noResultsText" class="text-slate-400 text-sm mt-1">Intenta con otro término de búsqueda o selecciona un idioma distinto.</p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-8 text-slate-400 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex items-center gap-3">
+                <img src="https://files.catbox.moe/hsc6ei.jpg" alt="Chizu Icon" class="w-8 h-8 rounded-full border border-pink-500/50">
+                <div>
+                    <p class="font-semibold text-slate-200"><span id="lblFooterCreated">Creado con cariño por</span> <span class="text-pink-400">Chizu</span> ✨</p>
+                    <p class="text-slate-500 text-xs" id="lblFooterHosted">Optimizado • Re:Zero Inspired Theme</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                <span class="text-xs text-blue-300 font-medium">Rem</span>
+                <span class="text-xs text-slate-600">•</span>
+                <span class="w-2 h-2 rounded-full bg-pink-400 animate-pulse"></span>
+                <span class="text-xs text-pink-300 font-medium">Ram</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>

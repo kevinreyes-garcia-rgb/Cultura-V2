@@ -1,0 +1,102 @@
+/* STREAMING_CHUNK:Defining theme variables and global styles... */
+:root {
+--rem-blue: #4aa3df;
+--rem-light: #e0f2fe;
+--rem-accent: #1d4ed8;
+--ram-pink: #f472b6;
+--ram-light: #fce7f3;
+--ram-accent: #be185d;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #0f172a;
+color: #f8fafc;
+background-image:
+radial-gradient(circle at 15% 15%, rgba(74, 163, 223, 0.12) 0%, transparent 40%),
+radial-gradient(circle at 85% 85%, rgba(244, 114, 182, 0.12) 0%, transparent 40%);
+background-attachment: fixed;
+}
+
+.font-fredoka {
+font-family: 'Fredoka', cursive, sans-serif;
+}
+
+/* Rem & Ram Dual Gradient Effects */
+.rr-gradient-text {
+background: linear-gradient(135deg, #60a5fa 0%, #f472b6 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.rr-gradient-border {
+border-image: linear-gradient(to right, #3b82f6, #ec4899) 1;
+}
+
+/*STREAMING_CHUNK:Styling Rem and Ram card variations... */
+.rem-card {
+border-top: 4px solid #3b82f6;
+box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15);
+}
+
+.ram-card {
+border-top: 4px solid #ec4899;
+box-shadow: 0 10px 25px -5px rgba(236, 72, 153, 0.15);
+}
+
+.rem-badge {
+background-color: rgba(59, 130, 246, 0.2);
+color: #93c5fd;
+border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.ram-badge {
+background-color: rgba(236, 72, 153, 0.2);
+color: #fbcfe8;
+border: 1px solid rgba(236, 72, 153, 0.4);
+}
+
+/* Custom Ribbon Hero Banner */
+.ribbon-banner {
+background-image: url('https://files.catbox.moe/u2rans.jpg');
+background-size: cover;
+background-position: center;
+}
+
+.ribbon-overlay {
+background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.95) 100%);
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+background: rgba(30, 41, 59, 0.75);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card:hover {
+border-color: rgba(147, 197, 253, 0.3);
+transform: translateY(-3px);
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Maid Lace Border Trim */
+.lace-top-border {
+background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0, rgba(255, 255, 255, 0.05) 10px, transparent 0, transparent 20px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+::-webkit-scrollbar-track {
+background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+background: #334155;
+border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #475569;
+}
