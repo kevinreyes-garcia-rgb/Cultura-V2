@@ -135,7 +135,7 @@ const translations = {
             },
             {
                 id: "mexico",
-                country: "México (Mi Elección)",
+                country: "Mexico (Mi Elección)",
                 flag: "🇲🇽",
                 dish: "Tacos",
                 dishDesc: "Tortillas de maíz rellenas con guisos de carne, salsa, cebolla y cilantro.",
