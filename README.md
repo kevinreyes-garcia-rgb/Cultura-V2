@@ -37,8 +37,7 @@ Este proyecto es el resultado del trabajo en equipo y la pasión de:
 <details>
    <summary>Instalacion</summary>
    
-[Link Directo](https://kevinreyes-garcia-rgb.github.io/Mapa-Hispano-XD/
-)
+[Link Directo](https://kevinreyes-garcia-rgb.github.io/Cultura-V2/)
 
 link escrito 
 ```
